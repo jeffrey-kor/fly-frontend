@@ -1,0 +1,27 @@
+.login-button-wrapper {
+    display: flex;
+    text-align: center;
+    width: 60px;
+    /*border: 2px solid grey;*/
+}
+
+.login-button-wrapper button {
+    width: 100%;
+    background: inherit;
+    border: none;
+    box-shadow: gold;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer;
+    color: grey;
+    font-size: 1rem;
+    font-family: "Roboto Thin", sans-serif;
+    font-weight: bold;
+}
+
+.login-button-wrapper button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+}

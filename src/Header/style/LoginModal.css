@@ -1,0 +1,57 @@
+.login-modal-wrapper {
+    display: grid;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    color: #000;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.login-modal-login-form {
+
+}
+
+.login-username-input {
+
+}
+
+.login-password-input {
+
+}
+
+.login-modal-login-button {
+
+}
+
+.login-modal-user-account-forgot-wrapper {
+
+}
+
+.login-modal-user-account-forgot-account {
+
+}
+
+.login-modal-user-account-forgot-password {
+
+}
+
+
+.login-modal-social-login {
+
+}
+
+.login-modal-social-login-google {
+
+}
+
+.login-modal-social-login-facebook {
+
+}
+
+.login-modal-social-login-kakao {
+
+}

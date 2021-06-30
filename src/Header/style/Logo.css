@@ -1,0 +1,20 @@
+.logo {
+    width: 100px;
+    overflow: auto; /* 부모 엘리먼트의 height 값에 자식의 속성을 맞춰서 배치하기 위해 사용 */
+    text-align: center;
+}
+
+.logo p {
+    display: inline-block;
+    margin-top: 6px;
+    font-family: "JetBrains Mono", cursive;
+    /*font-family: "Inter,Noto Sans", sans-serif;*/
+    font-size: 30px;
+    color: dimgrey;
+    font-weight: bold;
+    /* 하나의 div 속성 안에 요소를 가운데에 정렬하기 위한 방법
+        * P: text-align, C: inline-block
+        * P: display: flex; justify-content: center
+        * P: position: absolute, left: 50%, transform: translateX(-50%), C: position: absolute; left: 50%, transform: translateX(-50%)
+    */
+}

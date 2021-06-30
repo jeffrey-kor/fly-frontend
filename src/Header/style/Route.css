@@ -1,0 +1,38 @@
+.route-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.route-wrapper nav {
+    margin-top: 13px;
+}
+
+
+.route-wrapper ul {
+    list-style: none;
+}
+
+.route-wrapper ul li {
+    /*float: left;*/
+    float: left;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.route-wrapper ul li button {
+    border: none;
+    background: none;
+    overflow: visible;
+    cursor: pointer;
+    color: grey;
+    font-size: 1rem;
+    font-family: "Roboto Thin", sans-serif;
+    font-weight: bold;
+}
+
+.route-wrapper ul li button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+}
