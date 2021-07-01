@@ -9,6 +9,7 @@ import Cart from "./Pages/Cart";
 import Payment from "./Pages/Payment";
 import Review from "./Review/Review";
 import Post from "./Post/Review";
+import Footer from "./Footer/Footer";
 
 export default class App extends React.PureComponent {
   render() {
@@ -22,6 +23,7 @@ export default class App extends React.PureComponent {
           <Route path="/review" component={Review}/>
           <Route path="/post" component={Post}/>
         </Switch>
+        <Footer />
       </BrowserRouter>
     )
   }

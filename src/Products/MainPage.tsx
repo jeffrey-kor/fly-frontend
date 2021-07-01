@@ -9,6 +9,7 @@ export default class MainPage extends React.Component<any, any> {
       {/* TravelSearchBox  */}
       {/* ProductAllShowComponent */}
       {/* HotRateShowComponent */}
+      {/* 결국 상세페이지에서 컴포넌트가 갈리겠구나. */}
       </>
     )
   }

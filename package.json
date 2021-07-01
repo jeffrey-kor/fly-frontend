@@ -12,9 +12,11 @@
     "@types/node": "^12.20.15",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
+    "aws-sdk": "^2.937.0",
     "mobx": "^6.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.1.0",
@@ -25,6 +27,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "client-s3-deploy": "aws s3 sync build/ s3://fly-react-release-version --profile jeffrey",
+    "client-cloudfront-invalidation": "aws cloudfront create-invalidation --distribution-id E1F76910ZUKFMC --path '/*' --profile jeffrey",
+    "start:client-deploy": "npm run build && npm run client-s3-deploy && npm run client-cloudfront-invalidation",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

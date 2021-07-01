@@ -8,7 +8,7 @@ export type LoginState = {
 }
 
 export interface LoginProps {
-  open: boolean
+  open: boolean;
   close: () => void;
 }
 
@@ -36,7 +36,7 @@ export default class Login extends Component<any, any> {
   closeModal() {
     console.log("Clicked Exit button for exiting this modal");
     this.setState((preState: { isVisible: boolean; }) => ({
-      isVisible: preState.isVisible
+      isVisible: !preState.isVisible
     }));
   }
 
@@ -44,11 +44,12 @@ export default class Login extends Component<any, any> {
 
     return(
       <div className="login-button-wrapper">
-        {!this.state.isVisible
-          ? <button onClick={this.openModal} className="login-button" type="button">Sign in</button>
+        <button onClick={this.openModal} className="login-button" type="button">Sign in</button>
+        <LoginModal open={this.state.isVisible} close={this.closeModal} />
+        {!this.state.isvisible
+          ? <LoginModal open={this.state.isVisible} close={this.closeModal} />
           : null
         }
-        <LoginModal open={this.state.isVisible} close={this.closeModal} />
       </div>
     )
   }
