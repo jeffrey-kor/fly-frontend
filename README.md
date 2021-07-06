@@ -10,7 +10,7 @@
 
 ### STACKs
 `Language` : TypeScript(ES6+)
-Tools: React Hooks, Redux, Emotion, NEXT.js, Redux Saga, React Query, Story Book, Jest   
+Tools: React Hooks, Mobx, Story Book, Jest   
 
 `Deployment` : Amazon Web Service S3
 
