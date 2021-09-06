@@ -9,8 +9,8 @@
 ---
 
 ### STACKs
-`Language` : TypeScript(ES6+)
-Tools: React Hooks, Mobx, Story Book, Jest   
+`Language` : TypeScript(ES6+) <br>
+`Tools` : React Hooks, Mobx, Story Book, Jest   
 
 `Deployment` : Amazon Web Service S3
 
